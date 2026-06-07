@@ -4,11 +4,11 @@ const Skills = () => {
   // Yetenekleri bir array içinde tutalım ki daha sonra eklemek/çıkarmak kolay olsun
   const skillList = [
     { name: 'JAVASCRIPT', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' },
-    { name: 'NODE', icon: 'https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztooo7u.png' },
+    { name: 'N8N', icon: 'https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/n8n-color.png' },
     { name: 'REACT', icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
     { name: 'VS CODE', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg' },
     { name: 'REDUX', icon: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' },
-    { name: 'FIGMA', icon: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' },
+    { name: 'TAILWIND', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/960px-Tailwind_CSS_Logo.svg.png' },
   ];
 
   return (

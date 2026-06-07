@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaInstagram, FaFacebook, FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -27,10 +28,9 @@ const Footer = () => {
         
         {/* Sosyal Medya İkonları (Twitter, Dribbble, @, Instagram) */}
         <div className="flex justify-center items-center gap-6 pt-6 text-2xl text-[#4731D4]">
-          <a href="#" className="hover:scale-125 transition duration-200">🐦</a>
-          <a href="#" className="hover:scale-125 transition duration-200">🌐</a>
-          <a href="#" className="hover:scale-125 transition duration-200">@</a>
-          <a href="#" className="hover:scale-125 transition duration-200">📷</a>
+          <a href="https://www.instagram.com/garas4138/" className="hover:scale-125 transition duration-200"><FaInstagram /></a>
+          <a href="https://github.com/gurhanaras89-code" className="hover:scale-125 transition duration-200"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/g%C3%BCrhan-aras-269710391/" className="hover:scale-125 transition duration-200"> <FaLinkedin /> </a>
         </div>
 
       </div>

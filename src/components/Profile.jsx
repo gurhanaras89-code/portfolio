@@ -17,20 +17,20 @@ const Profile = () => {
             
             <div className="space-y-4 text-sm md:text-base">
               <div className="flex">
-                <span className="w-32 text-[#CBF281] font-bold">Doğum Tarihi</span>
-                <span>24.03.1996</span>
+                <span className="w-32 text-[#CBF281] font-bold">Birth Date</span>
+                <span>04.05.1989</span>
               </div>
               <div className="flex">
-                <span className="w-32 text-[#CBF281] font-bold">İkamet Şehri</span>
+                <span className="w-32 text-[#CBF281] font-bold">City</span>
                 <span>Uşak</span>
               </div>
               <div className="flex">
-                <span className="w-32 text-[#CBF281] font-bold">Eğitim Durumu</span>
-                <span className="flex-1">Kara Harp Okulu Lisans, 2011</span>
+                <span className="w-32 text-[#CBF281] font-bold">Education</span>
+                <span className="flex-1">Military School, 2011 - Workintech, 2026</span>
               </div>
               <div className="flex">
-                <span className="w-32 text-[#CBF281] font-bold">Tercih Ettiği Rol</span>
-                <span>FullStack Developer, UI</span>
+                <span className="w-32 text-[#CBF281] font-bold">Preferred Role</span>
+                <span>FullStack Developer</span>
               </div>
             </div>
           </div>
@@ -38,9 +38,9 @@ const Profile = () => {
           {/* Orta Blok: Görsel (Genişliği sabitledik ki diğerlerini sıkıştırmasın) */}
           <div className="w-full md:w-1/4 flex justify-center py-4 md:py-0">
             <img 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=400&auto=format&fit=crop" 
+              src="https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_1280.jpg" 
               alt="Workspace" 
-              className="rounded-2xl shadow-xl w-full max-w-[250px] aspect-video object-cover"
+              className="rounded-2xl shadow-xl w-full max-w-[550px] max-h-[400px] aspect-video object-cover"
             />
           </div>
 
@@ -48,10 +48,10 @@ const Profile = () => {
           <div className="w-full md:w-1/3 space-y-4">
             <h3 className="text-2xl font-semibold tracking-wide">About Me</h3>
             <p className="text-purple-100 leading-relaxed text-sm md:text-base">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.
+              I am a professional open to learning and innovation, aiming to transfer my disciplined and versatile educational background into a new career. With a team-oriented mindset and a goal-driven, results-focused approach, I am eager to succeed in this new chapter of my journey.
             </p>
             <p className="text-purple-100 leading-relaxed text-sm md:text-base">
-              Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!
+              
             </p>
           </div>
 
