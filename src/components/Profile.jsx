@@ -12,7 +12,7 @@ const Profile = () => {
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           
           {/* Sol Blok: Basic Information */}
-          <div className="w-full md:w-1/3 space-y-6">
+          <div className="w-full md:w-1/3 hover:scale-105 space-y-6">
             <h3 className="text-2xl font-semibold mb-6 tracking-wide">Basic Information</h3>
             
             <div className="space-y-4 text-sm md:text-base">
@@ -45,7 +45,7 @@ const Profile = () => {
           </div>
 
           {/* Sağ Blok: About Me */}
-          <div className="w-full md:w-1/3 space-y-4">
+          <div className="w-full md:w-1/3 hover:scale-105 space-y-4">
             <h3 className="text-2xl font-semibold tracking-wide">About Me</h3>
             <p className="text-purple-100 leading-relaxed text-sm md:text-base">
               I am a professional open to learning and innovation, aiming to transfer my disciplined and versatile educational background into a new career. With a team-oriented mindset and a goal-driven, results-focused approach, I am eager to succeed in this new chapter of my journey.

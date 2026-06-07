@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="pt-2">
           <a 
             href="mailto:gurhanaras89@gmail.com" 
-            className="text-[#4731D4] font-semibold text-xl underline hover:text-purple-900 transition block break-all"
+            className="text-[#4731D4] font-semibold text-xl underline cursor-pointer hover:scale-105 hover:text-purple-900 transition block break-all"
           >
             gurhanaras89@gmail.com
           </a>
