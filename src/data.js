@@ -57,7 +57,7 @@ export const siteData = {
         role: "FullStack Geliştirici"
       },
       aboutTitle: "Hakkımda",
-      aboutText1: "Ben, disiplinli ve çok yönlü eğitim geçmişimi yeni bir kariyere taşımayı hedefleyen, öğrenmeye ve yeniliğe açık bir profesyonelim. Takım odaklı bir anlayışla, hedef ve sonuç odaklı yaklaşımımla bu yeni yolculuğumda başarılı olmak için heyecanla hazırım.",
+      aboutText1: "Disiplinli ve çok yönlü eğitim geçmişimi yeni bir kariyere taşımayı hedefleyen, öğrenmeye ve yeniliğe açık bir profesyonelim. Takım odaklı bir anlayışla, hedef ve sonuç odaklı yaklaşımımla bu yeni yolculuğumda başarılı olmak için heyecanla hazırım.",
       aboutText2: ""
     }
   }
