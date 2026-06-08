@@ -62,13 +62,13 @@ const Hero = ({ darkMode, setDarkMode }) => {
         </div>
 
         {/* Sağ Taraf: Tam Kesişimde Duracak Profil Resmi */}
-        <div className="flex-1 flex justify-center md:justify-end">
+        <div className="flex-1 flex justify-center md:justify-end items-center">
           <div className="relative">
 
             <img
               src="./public/profil.jpeg"
               alt="Developer"
-              className="rounded-2xl shadow-2xl w-72 h-80 object-cover border-4 hover:scale-105 border-transparent -translate-x-20"
+              className="rounded-2xl shadow-2xl w-72 h-80 object-cover border-4 hover:scale-105 border-transparent md:-translate-x-20"
             />
           </div>
         </div>
