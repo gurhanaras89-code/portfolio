@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = ({ darkMode, setDarkMode }) => {
+const Hero = ({ darkMode, setDarkMode, data, lang, setLang }) => {
   return (
     // Ana kapsayıcı mor arka planlı
     <section className="bg-[#4731D4] dark:bg-[#12122a] text-white pt-8 pb-20 px-8 md:px-24 relative overflow-hidden min-h-[500px]">
@@ -10,8 +10,11 @@ const Hero = ({ darkMode, setDarkMode }) => {
 
       {/* Üst Bar: Dil Değiştirme ve Dark Mode Butonları */}
       <div className="relative flex justify-end items-center gap-6 mb-16 z-10 max-w-6xl mx-auto">
-        <button className="text-[#CBF281] cursor-pointer font-bold text-sm -translate-x-25 hover:scale-105 tracking-wider">
-          TÜRKÇE
+        <button
+          onClick={() => setLang(lang === 'en' ? 'tr' : 'en')}
+          className="text-[#CBF281] cursor-pointer font-bold text-sm -translate-x-25 hover:scale-105 tracking-wider"
+        >
+          {lang === 'en' ? 'TÜRKÇE' : 'ENGLISH'}
         </button>
 
         {/* Dark Mode Buton Alanı */}
@@ -32,15 +35,16 @@ const Hero = ({ darkMode, setDarkMode }) => {
 
         {/* Sol Taraf: Metinler */}
         <div className="flex-1 space-y-6">
-          <h1 className="text-[#CBF281] text-3xl font-bold tracking-wide">
+          <h1 className="text-[#CBF281] text-3xl font-bold hover:scale-120 tracking-wide">
             Gürhan ARAS
           </h1>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-[#CBF281] md:text-[#CBF281]">
-            <span className="text-white">I am a Frontend</span> <br /> Developer...
-          </h1>
-          <p className="text-lg text-purple-100 max-w-md">
-            ...who turns ideas into clean, functional web applications with a passion for continuous learning and growth.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-[#CBF281] md:text-[#CBF281] hover:scale-105">
+  {/* data.intro içindeki yapıyı Figma'na göre direkt tek parça veya bölünmüş basabilirsin */}
+  <span className="text-white">{data.intro}</span>
+</h1>
+<p className="text-lg text-purple-100 max-w-md hover:scale-105">
+  {data.description}
+</p>
 
           {/* Butonlar */}
           <div className="flex gap-4 pt-2">

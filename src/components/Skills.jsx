@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skills = () => {
+const Skills = ({ data }) => {
   // Yetenekleri bir array içinde tutalım ki daha sonra eklemek/çıkarmak kolay olsun
   const skillList = [
     { name: 'JAVASCRIPT', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' },
@@ -17,7 +17,7 @@ const Skills = () => {
         
         {/* Sol Taraf: Başlık */}
         <div className="md:w-1/3">
-          <h2 className="text-5xl font-bold text-[#4832D3] dark:text-[#CBF281]">Skills</h2>
+          <h2 className="text-5xl font-bold text-[#4832D3] dark:text-[#CBF281]">{data.title}</h2>
         </div>
 
         {/* Sağ Taraf: Skill Grid */}
