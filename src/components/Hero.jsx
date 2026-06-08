@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Hero = () => {
+const Hero = ({ darkMode, setDarkMode }) => {
   return (
     // Ana kapsayıcı mor arka planlı
-    <section className="bg-[#4731D4] text-white pt-8 pb-20 px-8 md:px-24 relative overflow-hidden min-h-[500px]">
+    <section className="bg-[#4731D4] dark:bg-[#12122a] text-white pt-8 pb-20 px-8 md:px-24 relative overflow-hidden min-h-[500px]">
 
       {/* Figma'daki Sağ Taraftaki Fıstık Yeşili Blok */}
-      <div className="absolute top-0 right-0 w-[25%] h-full bg-[#CBF281] hidden md:block z-0" />
+      <div className="absolute top-0 right-0 w-[25%] h-full bg-[#CBF281] dark:bg-[#1e1e3f] hidden md:block z-0" />
 
       {/* Üst Bar: Dil Değiştirme ve Dark Mode Butonları */}
       <div className="relative flex justify-end items-center gap-6 mb-16 z-10 max-w-6xl mx-auto">
@@ -15,13 +15,15 @@ const Hero = () => {
         </button>
 
         {/* Dark Mode Buton Alanı */}
-        <div className="flex items-center gap-2 text-sm font-bold tracking-wider text-[#777777] md:text-[#4731D4]">
+        <div className="flex items-center gap-2 text-sm font-bold tracking-wider text-[#777777] md:text-[#4731D4] z-10 relative">
           {/* Yuvarlak Switch Arka Planı */}
-          <div className="w-10 h-5 bg-[#4731D4] md:bg-[#CBF281] rounded-full relative cursor-pointer">
+          <div onClick={() => setDarkMode(!darkMode)} className="w-10 h-5 bg-[#4731D4] md:bg-[#CBF281] rounded-full translate-x-16 relative cursor-pointer">
             {/* Switch Yuvarlağı */}
-            <div className="w-4 h-4 bg-white rounded-full absolute top-[2px] left-[2px]" />
+            <div className={`w-4 h-4 bg-white rounded-full absolute top-[2px] transition-all duration-300 ${darkMode ? 'left-[22px]' : 'left-[2px]'}`} />
           </div>
-          <span className="text-white -translate-x-25 md:text-[#4731D4] hover:scale-105 cursor-pointer">DARK MODE</span>
+          <span onClick={() => setDarkMode(!darkMode)} className="text-white -translate-x-25 md:text-[#4731D4] hover:scale-105 cursor-pointer">
+            {darkMode ? 'LIGHT MODE' : 'DARK MODE'}
+          </span>
         </div>
       </div>
 
@@ -62,7 +64,7 @@ const Hero = () => {
         {/* Sağ Taraf: Tam Kesişimde Duracak Profil Resmi */}
         <div className="flex-1 flex justify-center md:justify-end">
           <div className="relative">
-            
+
             <img
               src="./public/profil.jpeg"
               alt="Developer"

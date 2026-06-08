@@ -12,12 +12,12 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-white py-20 px-8 md:px-24">
+    <section className="bg-white dark:bg-[#1a1a2e] py-20 px-8 md:px-24">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
         
         {/* Sol Taraf: Başlık */}
         <div className="md:w-1/3">
-          <h2 className="text-5xl font-bold text-[#4832D3]">Skills</h2>
+          <h2 className="text-5xl font-bold text-[#4832D3] dark:text-[#CBF281]">Skills</h2>
         </div>
 
         {/* Sağ Taraf: Skill Grid */}
@@ -33,7 +33,7 @@ const Skills = () => {
                 />
               </div>
               {/* Skill İsmi */}
-              <span className="text-[#777777] font-medium text-lg tracking-wider">
+              <span className="text-[#777777] dark:text-white font-medium text-lg tracking-wider">
                 {skill.name}
               </span>
             </div>

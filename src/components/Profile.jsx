@@ -2,7 +2,7 @@ import React from 'react';
 
 const Profile = () => {
   return (
-    <section className="bg-[#4731D4] text-white py-20 px-8 md:px-24">
+    <section className="bg-[#4731D4] dark:bg-[#12122a] text-white py-20 px-8 md:px-24">
       <div className="max-w-6xl mx-auto">
         
         {/* Bölüm Başlığı */}
@@ -13,7 +13,7 @@ const Profile = () => {
           
           {/* Sol Blok: Basic Information */}
           <div className="w-full md:w-1/3 hover:scale-105 space-y-6">
-            <h3 className="text-2xl font-semibold mb-6 tracking-wide">Basic Information</h3>
+            <h3 className="text-2xl font-semibold mb-6 tracking-wide dark:text-[#CBF281]">Basic Information</h3>
             
             <div className="space-y-4 text-sm md:text-base">
               <div className="flex">
@@ -46,7 +46,7 @@ const Profile = () => {
 
           {/* Sağ Blok: About Me */}
           <div className="w-full md:w-1/3 hover:scale-105 space-y-4">
-            <h3 className="text-2xl font-semibold tracking-wide">About Me</h3>
+            <h3 className="text-2xl font-semibold tracking-wide dark:text-[#CBF281]">About Me</h3>
             <p className="text-purple-100 leading-relaxed text-sm md:text-base">
               I am a professional open to learning and innovation, aiming to transfer my disciplined and versatile educational background into a new career. With a team-oriented mindset and a goal-driven, results-focused approach, I am eager to succeed in this new chapter of my journey.
             </p>
