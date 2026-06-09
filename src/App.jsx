@@ -6,6 +6,8 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { siteData } from './data';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,6 +23,11 @@ function App() {
         <Projects data={currentData.projectsSection} />
         <Footer data={currentData.footerSection} />
       </div>
+      <ToastContainer 
+        position="top-right" 
+        autoClose={5000} 
+        theme={darkMode ? 'dark' : 'light'} 
+      />
     </div>
   );
 }

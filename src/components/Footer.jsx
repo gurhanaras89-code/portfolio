@@ -8,13 +8,13 @@ const Footer = ({ data }) => {
         
         {/* Büyük Başlık */}
         <h2 className="text-4xl md:text-5xl font-bold text-[#4731D4] dark:text-[#CBF281] tracking-tight">
-          {data?.heading || "Send me a message!"}
+          {data.heading || "Send me a message!"}
 
         </h2>
         
         {/* Açıklama Yazısı */}
         <p className="text-gray-600 dark:text-gray-300 text-lg max-w-md mx-auto leading-relaxed">
-          {data?.subtext || "Got a question or proposal, or just want to say hello? Go ahead."}
+          {data.subtext || "Got a question or proposal, or just want to say hello? Go ahead."}
         </p>
         
         {/* E-posta Adresi */}

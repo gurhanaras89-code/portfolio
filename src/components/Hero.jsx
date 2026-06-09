@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Hero = ({ darkMode, setDarkMode, data, lang, setLang }) => {
   return (
@@ -11,7 +12,15 @@ const Hero = ({ darkMode, setDarkMode, data, lang, setLang }) => {
       {/* Üst Bar: Dil Değiştirme ve Dark Mode Butonları */}
       <div className="relative flex justify-end items-center gap-6 mb-16 z-10 max-w-6xl mx-auto">
         <button
-          onClick={() => setLang(lang === 'en' ? 'tr' : 'en')}
+          onClick={() => {
+  if (lang === 'en') {
+    setLang('tr');
+    toast.success('Dil Türkçe olarak değiştirildi! 🇹🇷');
+  } else {
+    setLang('en');
+    toast.info('Language switched to English! 🇬🇧');
+  }
+}}
           className="text-[#CBF281] cursor-pointer font-bold text-sm -translate-x-25 hover:scale-105 tracking-wider"
         >
           {lang === 'en' ? 'TÜRKÇE' : 'ENGLISH'}
