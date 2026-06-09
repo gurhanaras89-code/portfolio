@@ -7,7 +7,7 @@ const Skills = ({ data }) => {
     { name: 'n8n', icon: 'https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/n8n-color.png' },
     { name: 'REACT', icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
     { name: 'VS CODE', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg' },
-    { name: 'REDUX', icon: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' },
+    { name: 'REDUX', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIx6VZfS41hOuMxd_WU1Uno_ds_ofaqCX4qg&s' },
     { name: 'TAILWIND', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/960px-Tailwind_CSS_Logo.svg.png' },
   ];
 

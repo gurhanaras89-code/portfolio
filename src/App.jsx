@@ -19,7 +19,7 @@ function App() {
         <Skills data={currentData.skillsSection} />
         <Profile data={currentData.profileSection} />
         <Projects data={currentData.projectsSection} />
-        <Footer />
+        <Footer data={currentData.footerSection} />
       </div>
     </div>
   );

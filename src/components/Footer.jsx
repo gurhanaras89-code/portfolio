@@ -1,19 +1,20 @@
 import React from 'react';
 import { FaInstagram, FaFacebook, FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({ data }) => {
   return (
     <footer className="bg-white dark:bg-[#0d0d1a] py-24 px-8 text-center">
       <div className="max-w-2xl mx-auto space-y-6">
         
         {/* Büyük Başlık */}
         <h2 className="text-4xl md:text-5xl font-bold text-[#4731D4] dark:text-[#CBF281] tracking-tight">
-          Send me a message!
+          {data?.heading || "Send me a message!"}
+
         </h2>
         
         {/* Açıklama Yazısı */}
         <p className="text-gray-600 dark:text-gray-300 text-lg max-w-md mx-auto leading-relaxed">
-          Got a question or proposal, or just want to say hello? Go ahead.
+          {data?.subtext || "Got a question or proposal, or just want to say hello? Go ahead."}
         </p>
         
         {/* E-posta Adresi */}

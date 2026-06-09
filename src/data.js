@@ -28,8 +28,37 @@ export const siteData = {
       aboutTitle: "About Me",
       aboutText1: "I am a professional open to learning and innovation, aiming to transfer my disciplined and versatile educational background into a new career. With a team-oriented mindset and a goal-driven, results-focused approach, I am eager to succeed in this new chapter of my journey.",
       aboutText2: ""
-    }
-    
+    },
+    projectsSection: {
+      title: "Projects",
+      viewSite: "View Site",
+      viewGithub: "GitHub",
+      projects: [
+        {
+          title: 'Teknolojik Yemekler',
+          description: 'This is a modern, responsive Single Page Application (SPA) built with React that allows users to customize and order their favorite pizzas. The project is developed as a part of the Workintech Frontend Web Development curriculum, focusing on state management, form validation, API integration, and automated End-to-End (E2E) testing.',
+          tags: ['Javascript', 'Css', 'Vite'],
+          img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=500',
+          bgColor: 'bg-[#DDEEFE]',
+          siteUrl: 'https://pizza-challenge-khaki.vercel.app/',
+          githubUrl: 'https://github.com/gurhanaras89-code/pizza-challenge',
+        },
+        {
+          title: 'Sayı Tahmin Uygulaması',
+          description: 'A modern, responsive, and fun **Number Guessing Game** built with **HTML5**, **JavaScript (ES6+)**, and styled using **Tailwind CSS**.',
+          tags: ['Html', 'Css', 'Javascript'],
+          img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500',
+          bgColor: 'bg-[#D99EE1]',
+          siteUrl: 'https://sayi-tahmin-seven.vercel.app/',
+          githubUrl: 'https://github.com/gurhanaras89-code/sayi-tahmin',
+        },
+      ],
+    },
+    footerSection: {
+      heading: "Send me a message!",
+      subtext: "Got a question or proposal, or just want to say hello? Go ahead.",
+    },
+
   },
   tr: {
     heroSection: {
@@ -59,6 +88,35 @@ export const siteData = {
       aboutTitle: "Hakkımda",
       aboutText1: "Disiplinli ve çok yönlü eğitim geçmişimi yeni bir kariyere taşımayı hedefleyen, öğrenmeye ve yeniliğe açık bir profesyonelim. Takım odaklı bir anlayışla, hedef ve sonuç odaklı yaklaşımımla bu yeni yolculuğumda başarılı olmak için heyecanla hazırım.",
       aboutText2: ""
-    }
-  }
+    },
+  },
+  projectsSection: {
+    title: "Projeler",
+    viewSite: "Siteyi Gör",
+    viewGithub: "GitHub",
+    projects: [
+      {
+        title: 'Teknolojik Yemekler',
+        description: 'React ile geliştirilmiş modern, responsive bir Tek Sayfa Uygulaması.',
+        tags: ['Javascript', 'Css', 'Vite'],
+        img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=500',
+        bgColor: 'bg-[#DDEEFE]',
+        siteUrl: 'https://pizza-challenge-khaki.vercel.app/',
+        githubUrl: 'https://github.com/gurhanaras89-code/pizza-challenge',
+      },
+      {
+        title: 'Sayı Tahmin Uygulaması',
+        description: 'HTML5 ve JavaScript ile geliştirilmiş eğlenceli bir sayı tahmin oyunu.',
+        tags: ['Html', 'Css', 'Javascript'],
+        img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500',
+        bgColor: 'bg-[#D99EE1]',
+        siteUrl: 'https://sayi-tahmin-seven.vercel.app/',
+        githubUrl: 'https://github.com/gurhanaras89-code/sayi-tahmin',
+      },
+    ],
+  },
+  footerSection: {
+    heading: "Mesaj gönder!",
+    subtext: "Bir sorun, teklifin mi var yoksa sadece merhaba mı demek istiyorsun? Buyur.",
+  },
 };
