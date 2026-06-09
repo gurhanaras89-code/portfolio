@@ -79,7 +79,7 @@ const Hero = ({ darkMode, setDarkMode, data, lang, setLang }) => {
           <div className="relative">
 
             <img
-              src="./profil.jpeg"
+              src="https://github.com/gurhanaras89-code/portfolio/blob/main/profil.jpeg?raw=true"
               alt="Developer"
               className="rounded-2xl shadow-2xl w-72 h-80 object-cover border-4 hover:scale-105 border-transparent md:-translate-x-20"
             />
