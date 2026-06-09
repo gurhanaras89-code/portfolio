@@ -13,14 +13,14 @@ const Hero = ({ darkMode, setDarkMode, data, lang, setLang }) => {
       <div className="relative flex justify-end items-center gap-6 mb-16 z-10 max-w-6xl mx-auto">
         <button
           onClick={() => {
-  if (lang === 'en') {
-    setLang('tr');
-    toast.success('Dil Türkçe olarak değiştirildi! 🇹🇷');
-  } else {
-    setLang('en');
-    toast.info('Language switched to English! 🇬🇧');
-  }
-}}
+            if (lang === 'en') {
+              setLang('tr');
+              toast.success('Dil Türkçe olarak değiştirildi! 🇹🇷');
+            } else {
+              setLang('en');
+              toast.info('Language switched to English! 🇬🇧');
+            }
+          }}
           className="text-[#CBF281] cursor-pointer font-bold text-sm -translate-x-25 hover:scale-105 tracking-wider"
         >
           {lang === 'en' ? 'TÜRKÇE' : 'ENGLISH'}
@@ -48,12 +48,12 @@ const Hero = ({ darkMode, setDarkMode, data, lang, setLang }) => {
             Gürhan ARAS
           </h1>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-[#CBF281] md:text-[#CBF281] hover:scale-105">
-  {/* data.intro içindeki yapıyı Figma'na göre direkt tek parça veya bölünmüş basabilirsin */}
-  <span className="text-white">{data.intro}</span>
-</h1>
-<p className="text-lg text-purple-100 max-w-md hover:scale-105">
-  {data.description}
-</p>
+            {/* data.intro içindeki yapıyı Figma'na göre direkt tek parça veya bölünmüş basabilirsin */}
+            <span className="text-white">{data.intro}</span>
+          </h1>
+          <p className="text-lg text-purple-100 max-w-md hover:scale-105">
+            {data.description}
+          </p>
 
           {/* Butonlar */}
           <div className="flex gap-4 pt-2">
@@ -79,7 +79,7 @@ const Hero = ({ darkMode, setDarkMode, data, lang, setLang }) => {
           <div className="relative">
 
             <img
-              src="./public/profil.jpeg"
+              src="./profil.jpeg"
               alt="Developer"
               className="rounded-2xl shadow-2xl w-72 h-80 object-cover border-4 hover:scale-105 border-transparent md:-translate-x-20"
             />
