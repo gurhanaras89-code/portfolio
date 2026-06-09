@@ -8,10 +8,10 @@ const Profile = ({ data }) => {
         {/* Bölüm Başlığı */}
         <h2 className="text-5xl font-bold text-[#CBF281] mb-12">{data.title}</h2>
         
-        {/* ESAS DEĞİŞİKLİK BURADA: flex-col yerine direkt flex md:flex-row yapıyoruz */}
+        
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           
-          {/* Sol Blok: Basic Information */}
+          {/*Basic Information */}
           <div className="w-full md:w-1/3 hover:scale-105 space-y-6">
             <h3 className="text-2xl font-semibold mb-6 tracking-wide dark:text-[#CBF281]">{data.basicInfoTitle}</h3>
             
@@ -35,7 +35,7 @@ const Profile = ({ data }) => {
             </div>
           </div>
 
-          {/* Orta Blok: Görsel (Genişliği sabitledik ki diğerlerini sıkıştırmasın) */}
+          
           <div className="w-full md:w-1/4 flex justify-center py-4 md:py-0">
             <img 
               src="https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_1280.jpg" 
@@ -44,7 +44,7 @@ const Profile = ({ data }) => {
             />
           </div>
 
-          {/* Sağ Blok: About Me */}
+          {/*About Me */}
           <div className="w-full md:w-1/3 hover:scale-105 space-y-4">
             <h3 className="text-2xl font-semibold tracking-wide dark:text-[#CBF281]">About Me</h3>
             <p className="text-purple-100 leading-relaxed text-sm md:text-base">

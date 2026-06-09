@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Projects = ({ data }) => {
-  if (!data) {
-    return <div className="text-center py-10 text-gray-500">Projeler yüklenemedi...</div>;
-  }
+  
   const projectList = data.projects;
 
   return (

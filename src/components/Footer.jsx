@@ -27,7 +27,7 @@ const Footer = ({ data }) => {
 
         </h2>
         
-        {/* Açıklama Yazısı */}
+        {/* Açıklama */}
         <p className="text-gray-600 dark:text-gray-300 text-lg max-w-md mx-auto leading-relaxed">
           {data.subtext || "Got a question or proposal, or just want to say hello? Go ahead."}
         </p>
@@ -51,7 +51,7 @@ const Footer = ({ data }) => {
           </button>
         </div>
         
-        {/* Sosyal Medya İkonları (Twitter, Dribbble, @, Instagram) */}
+        {/* Sosyal Medya İkonları */}
         <div className="flex justify-center items-center gap-6 pt-6 text-2xl text-[#4731D4] dark:text-[#CBF281]">
           <a href="https://www.instagram.com/garas4138/" className="hover:scale-125 transition duration-200"><FaInstagram /></a>
           <a href="https://github.com/gurhanaras89-code" className="hover:scale-125 transition duration-200"><FaGithub /></a>

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Skills = ({ data }) => {
-  // Yetenekleri bir array içinde tutalım ki daha sonra eklemek/çıkarmak kolay olsun
   const skillList = [
     { name: 'JAVASCRIPT', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' },
     { name: 'n8n', icon: 'https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/n8n-color.png' },
@@ -15,12 +14,12 @@ const Skills = ({ data }) => {
     <section className="bg-white dark:bg-[#1a1a2e] py-20 px-8 md:px-24">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
         
-        {/* Sol Taraf: Başlık */}
+        {/* Sol Taraf: */}
         <div className="md:w-1/3">
           <h2 className="text-5xl font-bold text-[#4832D3] dark:text-[#CBF281]">{data.title}</h2>
         </div>
 
-        {/* Sağ Taraf: Skill Grid */}
+        {/* Sağ Taraf */}
         <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-4">
           {skillList.map((skill, index) => (
             <div key={index} className="flex items-center gap-4">
@@ -32,7 +31,6 @@ const Skills = ({ data }) => {
                   className="max-w-full max-h-full object-contain rounded-md" 
                 />
               </div>
-              {/* Skill İsmi */}
               <span className="text-[#777777] dark:text-white font-medium text-lg tracking-wider">
                 {skill.name}
               </span>

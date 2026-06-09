@@ -1,4 +1,4 @@
-// src/data.js
+
 export const siteData = {
   en: {
     heroSection: {
