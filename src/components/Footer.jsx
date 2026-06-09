@@ -1,7 +1,22 @@
 import React from 'react';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 import { FaInstagram, FaFacebook, FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = ({ data }) => {
+  const handleApiRequest = async () => {
+    try {
+      const response = await axios.post('https://reqres.in/api/workintech', {
+        name: "Gürhan Aras",
+        message: "Hello from portfolio!"
+      });
+      console.log('Response:', response.data);
+      toast.success('Başarılı! ✅');
+    } catch (error) {
+      console.error('Hata:', error);
+      toast.error('Bir hata oluştu ❌');
+    }
+  };
   return (
     <footer className="bg-white dark:bg-[#0d0d1a] py-24 px-8 text-center">
       <div className="max-w-2xl mx-auto space-y-6">
@@ -25,6 +40,15 @@ const Footer = ({ data }) => {
           >
             gurhanaras89@gmail.com
           </a>
+        </div>
+
+        <div className="pt-4">
+          <button
+            onClick={handleApiRequest}
+            className="bg-[#4731D4] dark:bg-[#CBF281] text-white dark:text-[#0d0d1a] font-bold px-8 py-3 rounded-full hover:scale-105 transition duration-200 cursor-pointer"
+          >
+            {data.hello}
+          </button>
         </div>
         
         {/* Sosyal Medya İkonları (Twitter, Dribbble, @, Instagram) */}

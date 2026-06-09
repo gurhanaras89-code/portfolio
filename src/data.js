@@ -57,6 +57,7 @@ export const siteData = {
     footerSection: {
       heading: "Send me a message!",
       subtext: "Got a question or proposal, or just want to say hello? Go ahead.",
+      hello: "Say Hello 👋" ,
     },
 
   },
@@ -117,6 +118,7 @@ export const siteData = {
     footerSection: {
       heading: "Mesaj gönder!",
       subtext: "Bir sorun, teklifin mi var yoksa sadece merhaba mı demek istiyorsun?",
+      hello: "Merhaba De 👋" 
     },
   },
 }
